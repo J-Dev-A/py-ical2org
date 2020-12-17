@@ -13,7 +13,7 @@ def main():
 
     today = datetime.date.today()
     to_file_arr = [
-        f'<{datetime.datetime.today().strftime("%Y-%m-%d")} {calendar.day_abbr[today.weekday()]} {line[:line.find(" ")]}> {line[line.rfind(":"):]}'
+        f'<{datetime.datetime.today().strftime("%Y-%m-%d")} {calendar.day_abbr[today.weekday()]} {line[:line.find(" ")]}> {line[line.rfind(" :"):]}'
         for line in line_array
     ]
 
